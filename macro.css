@@ -1,0 +1,97 @@
+:root {
+  --nav-footer: #5f5d5d;
+  --nav-footer-text: #ffffff;
+  --primary-background: #146c94;
+  --secondary-background: #19a7ce;
+  --tertiary-background: #f6f1f1;
+  --hover: #f6f1f1;
+}
+
+body {
+  background-color: var(--tertiary-background);
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  /* font-size: 62.5%; */
+  width: 80%;
+  margin: auto;
+}
+
+header,
+footer {
+  text-align: center;
+  color: var(--primary-background);
+  font-weight: bold;
+  /* background-color: var(--nav-footer); */
+  width: 100%;
+}
+
+header {
+  padding: 20px;
+  font-size: 1.4rem;
+}
+
+main {
+  min-height: calc(100vh - 7em);
+}
+
+article {
+  background-color: var(--primary-background);
+  color: var(--tertiary-background);
+}
+
+aside {
+  background-color: var(--secondary-background);
+  color: var(--primary-background);
+}
+
+article,
+aside {
+  padding: 20px;
+  margin: 20px;
+}
+
+footer {
+  margin-block-start: 10%;
+}
+
+/* narrow view port */
+
+/* @media screen and (max-width: 20em) {
+  body {
+    background-color: black;
+  }
+} */
+
+/* medium screen */
+
+/* @media screen and (min-width: 20em) and (max-width: 44em) {
+    body {
+        background-color: blue;
+    }
+} */
+
+/* large screen  using Grid */
+/* @media screen and (min-width: 45em) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+} */
+
+/* large screen using Flexbox */
+
+@media screen and (min-width: 45em) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main article {
+    flex: 2;
+  }
+
+  main aside {
+    flex: 1;
+  }
+}
